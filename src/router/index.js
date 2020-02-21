@@ -63,7 +63,7 @@ Vue.use(Router)
 
 const myRouter = new Router({
   mode: 'history',
-  base: 'web_v2',
+  base: '',
   hashbang: true,
   history: false, // 这个参数改为false就可以了
   saveScrollPosition: true,

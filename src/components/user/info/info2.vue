@@ -6,7 +6,7 @@
 			<div class="user-basic-info" v-if='personalCenter && personalCenter'>
 				<div class="user-basic-l">
 					<div class="user-avatar">
-						<div class="image-avatar" :style="{backgroundImage : 'url(' + personalCenter.avatar || 'https://www.daiwei.site/web_v2/bg/avatar1.jpg' + ')', backgroundSize:'cover', backgroundPosition:'center'}"></div>
+						<div class="image-avatar" :style="{backgroundImage : 'url(' + personalCenter.avatar || 'https://www.daiwei.site/bg/avatar1.jpg' + ')', backgroundSize:'cover', backgroundPosition:'center'}"></div>
 						<span class="change-avatar">
 							<form :action="'https://www.daiwei.site/php/web_v2_api/upload.php?id=' + personalCenter.id" method="post" enctype="multipart/form-data" target="rfFrame">
 								<input class="info" type="text" name="id" :value="personalCenter.id" />

@@ -7,7 +7,7 @@
 		<transition name="scale">
 			<div class="updatetips_info" v-show="showInfo">
 				<div class="img_bg">
-					<!-- <img src="http://oiq8j9er1.bkt.clouddn.com/update_bg.jpg" alt="未曾遗忘的青春"> -->
+					<!-- <img src="http://oiq8j9er1.bkt.clouddn.com/update_bg.jpg" alt="董豆豆"> -->
 					<h3 class="title">更新提示</h3>
 					<span class="update_version">版本号 : v{{updateInfo.version}}</span>
 				</div>

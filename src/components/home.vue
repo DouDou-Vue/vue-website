@@ -69,7 +69,7 @@ export default {
   },
   computed: {
     bingImageDisc () {
-      return store.getters.getGlobalInfo.showBingImage ? 'bing' : '未曾遗忘的青春'
+      return store.getters.getGlobalInfo.showBingImage ? 'bing' : '董豆豆'
     },
     imageInfo () {
       return store.getters.getFixedImageInfo

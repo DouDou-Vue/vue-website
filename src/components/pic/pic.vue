@@ -11,7 +11,7 @@
                 <!-- 这部分放你要渲染的那些内容 -->  
                 <swiper-slide v-for="(item, index) in picListInfo.detail" :key="item.id">
                   <!-- <div class="swiper-lazy-preloader"></div> -->
-                  <img class="image_info" :id="'detail_' + index" :src="item.url" alt="未曾遗忘的青春" :data-disc="picListInfo.disc" :data-title="picListInfo.place" :data-date="picListInfo.datetime">
+                  <img class="image_info" :id="'detail_' + index" :src="item.url" alt="董豆豆" :data-disc="picListInfo.disc" :data-title="picListInfo.place" :data-date="picListInfo.datetime">
                 </swiper-slide>
                 <!-- 这是轮播的小圆点 -->  
                 <div class="swiper-pagination" slot="pagination"></div>  

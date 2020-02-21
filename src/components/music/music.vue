@@ -46,7 +46,7 @@
 			</transition>
   			<div class="right_info">
   				<div class="bg-info">
-  					<img class="music-bg" :src="getCurrentMusic.picurl ? getCurrentMusic.picurl : 'https://www.daiwei.site/web_v2/bg/657952152722629515.jpg'">
+  					<img class="music-bg" :src="getCurrentMusic.picurl ? getCurrentMusic.picurl : 'https://www.daiwei.site/bg/657952152722629515.jpg'">
   				</div>
   				<div class="lrc-content" ref="lrcContent">
   					<div class="lrc-wrapper" ref="lrcWrapper">
@@ -65,7 +65,7 @@
   				</div>
   				<div class="music_progress" id="music_progress">
   					<div class="music_current_detail">
-  						<span class="music_c_name">{{getCurrentMusic.name ? getCurrentMusic.name : '未曾遗忘的青春'}} - {{getCurrentMusic.singer ? getCurrentMusic.singer : '戴维戴维'}}</span>
+  						<span class="music_c_name">{{getCurrentMusic.name ? getCurrentMusic.name : '董豆豆'}} - {{getCurrentMusic.singer ? getCurrentMusic.singer : '戴维戴维'}}</span>
   						<span class="music_c_time">{{getMusicCurrentT !== NaN & getMusicCurrentT !== '00:00' ? getMusicDurationType(getMusicCurrentT * 1000) : '00:00'}} / {{getCurrentMusic.duration ? getCurrentMusic.duration : '00:00'}}</span>
   					</div>
   					<div class="music_progress_bar" id="music_progress">

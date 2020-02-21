@@ -3,8 +3,8 @@
 		<p class="toplist_title">收藏的歌单</p>
 		<div class="toplist_content dw-boot-col-lg-12">
 			<div class="toplist_l dw-boot-col-lg-2 dw-boot-col-md-3 dw-boot-col-sm-4 dw-boot-col-xs-4">
-				<div class="toplist_detail" @click.stop="openTopList($event)" data-id="124995419" title="未曾遗忘的青春的歌单">
-					<img src="https://www.daiwei.site/web_v2/bg/657952152722629515.jpg" alt="日本Oricon周榜">
+				<div class="toplist_detail" @click.stop="openTopList($event)" data-id="124995419" title="董豆豆的歌单">
+					<img src="https://www.daiwei.site/bg/657952152722629515.jpg" alt="日本Oricon周榜">
 				</div>
 			</div>
 			<div class="toplist_l dw-boot-col-lg-2 dw-boot-col-md-3 dw-boot-col-sm-4 dw-boot-col-xs-4">
@@ -115,7 +115,7 @@
   			this.$router.push({name: 'musicindex', params: {id: id}})
   		},
   		getTopList () {
-  			var url = 'https://www.daiwei.site/web_v2/server/music.php?inAjax=1&do=albums'
+  			var url = 'https://www.daiwei.site/server/music.php?inAjax=1&do=albums'
   			fecth.get(url).then((res) => {
   				this.top_list_hot = res.data.playlists
   			}, (err) => {

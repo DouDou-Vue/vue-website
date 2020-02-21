@@ -18,8 +18,8 @@ Vue.use(VueAwesomeSwiper)
 Vue.use(ElementUI)
 
 Vue.use(VueLazyload, {
-  loading: 'https://www.daiwei.site/web_v2/dw.png',
-  error: 'https://www.daiwei.site/web_v2/bg/657952152722629515.jpg'
+  loading: 'https://www.daiwei.site/dw.png',
+  error: 'https://www.daiwei.site/bg/657952152722629515.jpg'
 })
 
 Vue.config.productionTip = false

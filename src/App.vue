@@ -5,7 +5,7 @@
       <fixed-bg v-if="imageInfo.url && imageSetting" :imagepath="imageInfo.url" :maskcolor="getGlobalStyle.contentInfo.bgcolor" :maskopacity="getGlobalStyle.contentInfo.opacity" :masktype="getGlobalStyle.contentInfo.type" :maskglobainfo="getGlobalStyle" ></fixed-bg>
     </div>
     <v-content></v-content>
-    <updatetips :defaultvalue="getVersionList"></updatetips>
+    <!-- <updatetips :defaultvalue="getVersionList"></updatetips> -->
     <audio :src="getCurrentMusic.url" ref="myAudio"></audio>
   </div>
 </template>
@@ -18,7 +18,7 @@ import fixedbg from 'components/common/fixedbg/fixedbg.vue'
 import content from 'components/common/content/content.vue'
 import pic from 'components/pic/pic.vue'
 import loader from 'components/common/loader/loader.vue'
-import updatetips from 'components/common/updatetips/updatetips.vue'
+// import updatetips from 'components/common/updatetips/updatetips.vue'
 import DGlobal from 'common/js/global.js'
 import API from 'config/api'
 // 引入背景请求的api
@@ -36,8 +36,8 @@ export default {
     'v-content': content,
     'fixed-bg': fixedbg,
     pic,
-    loader,
-    updatetips
+    loader
+    // updatetips
   },
   methods: {
     fetchData () {
@@ -213,7 +213,7 @@ export default {
   },
   mounted () {
     // 输出信息
-    DGlobal.utils.setConsole('基于vue2.0的网站新版更新', 1, '未曾遗忘的青春')
+    DGlobal.utils.setConsole('基于vue2.0的网站新版更新', 1, '董豆豆')
     // 设置audio 的refs
     this.setAudioRef()
     // this.$nextTick(() => {
