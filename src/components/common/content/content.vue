@@ -4,12 +4,12 @@
       <!-- pc 页面菜单 -->
       <div class="left-menu" v-show="getGlobalInfo.isHigher768">
           <router-link class="logo" tag="a" to="/home">
-            <img width="36" height="36" :src="home" title="董豆豆 | 萌芽 - web前端_技术分享_戴伟的个人网站" alt="">
+            <img width="36" height="36" :src="home" title="董豆豆 | 个人网站" alt="">
           </router-link>
           <router-link tag="a" to="/home">
             <li>首页</li>
           </router-link>
-          <a href="https://www.daiwei.site/blog" target="_black">
+          <a href="http://love.shenqidoudou.com" target="_black">
             <li>博客</li>
           </a>
           <router-link tag="a" to="/music">
@@ -35,7 +35,7 @@
               <router-link tag="a" to="/home">
               <li>首页</li>
               </router-link>
-              <a href="https://www.daiwei.site/blog" target="_black">
+              <a href="http://love.shenqidoudou.com" target="_black">
                 <li>博客</li>
               </a>
               <router-link tag="a" to="/music">
